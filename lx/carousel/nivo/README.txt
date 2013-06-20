@@ -5,8 +5,8 @@ lx.carousel.nivo
 Overview
 --------
 
-This product is a installable Plone Theme developed by `Simples
-Consultoria <http://www.simplesconsultoria.com.br/>`_.
+This product is a installable Plone Theme developed by `Lucas
+Aquino <http://www.lucasaquino.com.br/>`_.
  
 Requirements
 ------------
@@ -14,6 +14,8 @@ Requirements
     - Plone 3.2.x (http://plone.org/products/plone)
     
     - Plone 3.3.x (http://plone.org/products/plone)
+    
+    - Plone 4.x (http://plone.org/products/plone)
 
 Installation
 ------------
@@ -57,6 +59,7 @@ product installation.
 
 Browsers and OS's
 -----------------
+    * Internet Explorer 9.0 (WinXP/Vista)
     
     * Internet Explorer 8.0 (WinXP/Vista)
     
@@ -71,6 +74,6 @@ Browsers and OS's
 Credits
 -------
 
-* Simples Consultoria (products at simplesconsultoria dot com dot br) - Design / 
+* Lucas Aquino (contato at lucasaquino dot com dot br) - Design / 
   Packaging
 
