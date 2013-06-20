@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+
+ <skin-path name="*">
+  <layer name="lx_carousel_nivo_images" remove="True" />
+  <layer name="lx_carousel_nivo_templates" remove="True" />
+  <layer name="lx_carousel_nivo_styles" remove="True" />
+  <layer name="lx_carousel_nivo_javascripts" remove="True" />
+ </skin-path>
+
+</object>

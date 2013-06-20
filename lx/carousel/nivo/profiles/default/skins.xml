@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="lx_carousel_nivo">
+
+ <object name="lx_carousel_nivo_images"
+    meta_type="Filesystem Directory View"
+    directory="lx.carousel.nivo:skins/images" />
+ <object name="lx_carousel_nivo_templates"
+    meta_type="Filesystem Directory View"
+    directory="lx.carousel.nivo:skins/templates" />
+ <object name="lx_carousel_nivo_styles"
+    meta_type="Filesystem Directory View"
+    directory="lx.carousel.nivo:skins/styles" />
+ <object name="lx_carousel_nivo_javascripts"
+    meta_type="Filesystem Directory View"
+    directory="lx.carousel.nivo:skins/javascripts" />
+
+ <skin-path
+    name="lx_carousel_nivo"
+    based-on="Sunburst Theme"
+    >
+  <layer
+     name="lx_carousel_nivo_images"
+     insert-after="custom"
+     />
+  <layer
+     name="lx_carousel_nivo_templates"
+     insert-after="lx_carousel_nivo_images"
+     />
+  <layer
+     name="lx_carousel_nivo_styles"
+     insert-after="lx_carousel_nivo_templates"
+     />
+  <layer
+      name="lx_carousel_nivo_javascripts"
+      insert-after="lx_carousel_nivo_styles"
+      />
+ </skin-path>
+
+</object>

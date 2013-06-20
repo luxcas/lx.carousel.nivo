@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layers>
+ <layer
+    name="lx.carousel.nivo"
+    interface="lx.carousel.nivo.browser.interfaces.IThemeSpecific"
+    remove="True"
+    />
+</layers>
