@@ -1,7 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:carousel="http://namespaces.plone.org/carousel"
     i18n_domain="lx.carousel.nivo">
+    
+    <include package="Products.Carousel" />
 
   <!-- Browser layer registration -->
 
@@ -10,48 +13,18 @@
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="lx_carousel_nivo"
       />
+  
+    <carousel:banner
+      name="banner-example"
+      template="templates/teste.pt"
+      title="Default-example"
+      />
+    
+    
 
 
   <!-- Viewlets registration -->
-
   <!--
-  <browser:viewlet
-      name="lx.carousel.nivo.languageseletor"
-      for="*"
-      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-      class=".viewlets.LanguageSelector"
-      layer=".interfaces.IThemeSpecific"
-      permission="zope.Public"
-      />
-
-  <browser:viewlet
-      name="lx.carousel.nivo.searchbox"
-      for="*"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".viewlets.SearchBoxViewlet"
-      layer=".interfaces.IThemeSpecific"
-      permission="zope.Public"
-      />
-
-  <browser:viewlet
-      name="lx.carousel.nivo.logo"
-      for="*"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".viewlets.LogoViewlet"
-      layer=".interfaces.IThemeSpecific"
-      permission="zope.Public"
-      />
-
-  <browser:viewlet
-      name="lx.carousel.nivo.documentactions"
-      for="*"
-      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
-      class=".viewlets.DocumentActionsViewlet"
-      layer=".interfaces.IThemeSpecific"
-      permission="zope.Public"
-      />
-  
-
   <browser:viewlet
       name="lx.carousel.nivo.footer"
       for="*"
@@ -60,8 +33,8 @@
       layer=".interfaces.IThemeSpecific"
       permission="zope.Public"
       />
-
     -->
+    
   <!-- Resource directories registration -->
 
   <browser:resourceDirectory

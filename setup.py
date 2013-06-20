@@ -28,7 +28,7 @@ setup(name='lx.carousel.nivo',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
+          'Products.Carousel>=2.2.1',
       ],
       entry_points="""
       # -*- Entry points: -*-
