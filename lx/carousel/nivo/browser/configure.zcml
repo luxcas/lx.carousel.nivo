@@ -48,5 +48,10 @@
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
       />
+  
+    <browser:resourceDirectory
+        name="carousel.nivoslider"
+        directory="resources"
+        />
 
 </configure>
