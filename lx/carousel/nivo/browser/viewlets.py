@@ -38,3 +38,7 @@ from plone.app.i18n.locales.browser import selector
 
 class FooterViewlet(common.FooterViewlet):
     index = ViewPageTemplateFile('templates/footer.pt')
+
+class CarouselViewlet(self):
+    import pdb; pdb.set_trace()
+
