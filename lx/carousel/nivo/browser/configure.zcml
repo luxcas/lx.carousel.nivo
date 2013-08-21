@@ -1,0 +1,54 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:carousel="http://namespaces.plone.org/carousel"
+    i18n_domain="lx.carousel.nivo">
+    
+    <include package="Products.Carousel" />
+
+  <!-- Browser layer registration -->
+
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="lx_carousel_nivo"
+      />
+  
+  <carousel:banner
+      name="banner-example"
+      template="templates/responsive.pt"
+      title="Default Reponsive"
+      />
+    
+  <!-- Viewlets registration -->
+  <!--
+  <browser:viewlet
+      name="lx.carousel.nivo.footer"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.FooterViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope.Public"
+      />
+    -->
+    
+  <!-- Resource directories registration -->
+
+  <browser:resourceDirectory
+      name="lx.carousel.nivo.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:resourceDirectory
+      name="lx.carousel.nivo.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+  
+  <browser:resourceDirectory
+      name="lx.carousel.nivo.templates"
+      directory="templates"
+      layer=".interfaces.IThemeSpecific"
+      />
+</configure>
